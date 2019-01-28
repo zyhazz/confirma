@@ -38,7 +38,7 @@ function req($url, $header = null, $post_data = null){
 <html>
 
 <head>
-<meta
+    <meta
 	content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
 	name="viewport">
     <meta charset="utf-8">
@@ -49,7 +49,8 @@ function req($url, $header = null, $post_data = null){
     <script src="itemslide.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.12/jquery.mousewheel.min.js"></script>
     <script src="sliding.js"></script>
-</head><body>
+</head>
+<body>
 
 <center>
     <div id="bg">
@@ -123,6 +124,6 @@ if(isset($_GET['id']) || isset($_GET['identificacao'])){
 ?>
 <a class="github-button" href="https://github.com/zyhazz/confirma" data-size="large" aria-label="Star zyhazz/confirma on GitHub">Github</a>
 </div>
-	<script async defer src="https://buttons.github.io/buttons.js"></script>
-	<body>
-	<html>
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+<body>
+<html>
