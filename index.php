@@ -25,7 +25,7 @@ function req($url, $header = null, $post_data = null){
 	
 	$tmp = "/tmp/cookie.txt";
 	curl_setopt($curl, CURLOPT_COOKIEFILE, $tmp );
-	curl_setopt($curl, CURLOPT_COOKIEJAR, $tmp . "cookie.txt");
+	curl_setopt($curl, CURLOPT_COOKIEJAR, $tmp );
 	curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
 	$httpCode = curl_getinfo($curl, CURLINFO_HTTP_CODE);
 	$data = curl_exec($curl);
