@@ -12,7 +12,7 @@ $date = new DateTime(null, new DateTimeZone('America/Fortaleza'));
 function req($url, $header = null, $post_data = null){
 	$curl = curl_init();
 	// debug
-	curl_setopt($curl, CURLOPT_PROXY, "127.0.0.1:8888");
+	//curl_setopt($curl, CURLOPT_PROXY, "127.0.0.1:8888");
 
 	curl_setopt($curl, CURLOPT_URL, $url);
 	curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
