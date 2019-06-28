@@ -1,18 +1,18 @@
 <?php
 require_once 'simple_html_dom.php';
 
-$mainURL = "https://intranet.maracanau.ifce.edu.br/ifce/ra";
+$mainURL = "https://intranet.maracanau.ifce.edu.br/old/public/";
 
-$cardapioURL = "https://intranet.maracanau.ifce.edu.br/ifce/ra/refeicao/filtrar";
+$cardapioURL = "https://intranet.maracanau.ifce.edu.br/old/public/ifce/ra/refeicao/filtrar";
 
-$confirmarURL = "https://intranet.maracanau.ifce.edu.br/ifce/ra/refeicao/pedido";
+$confirmarURL = "https://intranet.maracanau.ifce.edu.br/old/public/ifce/ra/refeicao/pedido";
 
 $date = new DateTime(null, new DateTimeZone('America/Fortaleza'));
 
 function req($url, $header = null, $post_data = null){
 	$curl = curl_init();
 	// debug
-	//curl_setopt($curl, CURLOPT_PROXY, "127.0.0.1:8888");
+	curl_setopt($curl, CURLOPT_PROXY, "127.0.0.1:8888");
 
 	curl_setopt($curl, CURLOPT_URL, $url);
 	curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
